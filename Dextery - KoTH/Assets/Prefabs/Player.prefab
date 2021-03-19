@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 174431670789448774}
   - component: {fileID: 174431670789448777}
   - component: {fileID: 174431670789448776}
-  - component: {fileID: 174431670789448775}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -80,19 +79,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &174431670789448775
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 174431670789448773}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &174431671976035865
 GameObject:
   m_ObjectHideFlags: 0
@@ -104,7 +90,6 @@ GameObject:
   - component: {fileID: 174431671976035866}
   - component: {fileID: 174431671976035869}
   - component: {fileID: 174431671976035868}
-  - component: {fileID: 174431671976035867}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -174,20 +159,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!136 &174431671976035867
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 174431671976035865}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &174431672130020874
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,6 +170,7 @@ GameObject:
   - component: {fileID: 174431672130020877}
   - component: {fileID: 174431672130020876}
   - component: {fileID: 174431672130020875}
+  - component: {fileID: 8380172831889042094}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -253,3 +225,17 @@ MonoBehaviour:
   m_smoothness: 5
   m_camera: {fileID: 0}
   m_dexteryModel: {fileID: 174431671976035866}
+--- !u!136 &8380172831889042094
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174431672130020874}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
